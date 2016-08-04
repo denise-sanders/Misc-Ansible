@@ -1,0 +1,11 @@
+# This is a quick ref for templating in ansible. If more is needed, https://codereviewvideos.com/course/ansible-tutorial/video/ansible-templates is a great video
+
+---
+- hosts: 127.0.0.1 
+  connection: local
+  vars: 
+    location: "big ass fan"
+
+  tasks:
+    - name: copy over tempate file
+      template: src=text.j2 dest=/Users/deni0109/Documents/text.txt 
